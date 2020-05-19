@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F2348712473A48D002E3385 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0F2348702473A48D002E3385 /* .gitignore */; };
+		0F2348732473ABDD002E3385 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2348722473ABDD002E3385 /* CoreDataStack.swift */; };
+		0F23487A2473BA54002E3385 /* Verb+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2348762473BA54002E3385 /* Verb+CoreDataClass.swift */; };
+		0F23487B2473BA54002E3385 /* Verb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2348772473BA54002E3385 /* Verb+CoreDataProperties.swift */; };
+		0F23487C2473BA54002E3385 /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2348782473BA54002E3385 /* Word+CoreDataClass.swift */; };
+		0F23487D2473BA54002E3385 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2348792473BA54002E3385 /* Word+CoreDataProperties.swift */; };
 		0F3B0FDA2473963D00828699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FD92473963D00828699 /* AppDelegate.swift */; };
 		0F3B0FDC2473963D00828699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FDB2473963D00828699 /* SceneDelegate.swift */; };
 		0F3B0FDE2473963D00828699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FDD2473963D00828699 /* ViewController.swift */; };
@@ -42,6 +47,11 @@
 
 /* Begin PBXFileReference section */
 		0F2348702473A48D002E3385 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0F2348722473ABDD002E3385 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0F2348762473BA54002E3385 /* Verb+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Verb+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0F2348772473BA54002E3385 /* Verb+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Verb+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0F2348782473BA54002E3385 /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0F2348792473BA54002E3385 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0F3B0FD62473963D00828699 /* LearningYourEnglishWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningYourEnglishWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3B0FD92473963D00828699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3B0FDB2473963D00828699 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +98,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2348742473B45C002E3385 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0F2348752473B49C002E3385 /* CoreDataEntities */,
+				0F2348722473ABDD002E3385 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0F2348752473B49C002E3385 /* CoreDataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				0F2348762473BA54002E3385 /* Verb+CoreDataClass.swift */,
+				0F2348772473BA54002E3385 /* Verb+CoreDataProperties.swift */,
+				0F2348782473BA54002E3385 /* Word+CoreDataClass.swift */,
+				0F2348792473BA54002E3385 /* Word+CoreDataProperties.swift */,
+			);
+			path = CoreDataEntities;
+			sourceTree = "<group>";
+		};
 		0F3B0FCD2473963C00828699 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +142,7 @@
 		0F3B0FD82473963D00828699 /* LearningYourEnglishWords */ = {
 			isa = PBXGroup;
 			children = (
+				0F2348742473B45C002E3385 /* CoreData */,
 				0F3B100E2473A0DD00828699 /* Home */,
 				0F3B0FD92473963D00828699 /* AppDelegate.swift */,
 				0F3B0FDB2473963D00828699 /* SceneDelegate.swift */,
@@ -288,12 +319,17 @@
 			files = (
 				0F3B0FDE2473963D00828699 /* ViewController.swift in Sources */,
 				0F3B10142473A10600828699 /* HomeRouter.swift in Sources */,
+				0F23487B2473BA54002E3385 /* Verb+CoreDataProperties.swift in Sources */,
+				0F23487A2473BA54002E3385 /* Verb+CoreDataClass.swift in Sources */,
 				0F3B0FE42473963D00828699 /* LearningYourEnglishWords.xcdatamodeld in Sources */,
+				0F2348732473ABDD002E3385 /* CoreDataStack.swift in Sources */,
 				0F3B0FDA2473963D00828699 /* AppDelegate.swift in Sources */,
 				0F3B10132473A10600828699 /* HomePresenter.swift in Sources */,
+				0F23487D2473BA54002E3385 /* Word+CoreDataProperties.swift in Sources */,
 				0F3B10162473A10600828699 /* HomeConfigurator.swift in Sources */,
 				0F3B10152473A10600828699 /* HomeViewController.swift in Sources */,
 				0F3B0FDC2473963D00828699 /* SceneDelegate.swift in Sources */,
+				0F23487C2473BA54002E3385 /* Word+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
