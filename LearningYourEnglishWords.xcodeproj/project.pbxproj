@@ -16,6 +16,7 @@
 		0F3B0FE92473964000828699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B0FE72473964000828699 /* LaunchScreen.storyboard */; };
 		0F3B0FF42473964000828699 /* LearningYourEnglishWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FF32473964000828699 /* LearningYourEnglishWordsTests.swift */; };
 		0F3B0FFF2473964100828699 /* LearningYourEnglishWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FFE2473964100828699 /* LearningYourEnglishWordsUITests.swift */; };
+		0F3B100D24739C4700828699 /* .gitignor in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B100C24739C4700828699 /* .gitignor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0F3B0FFA2473964100828699 /* LearningYourEnglishWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningYourEnglishWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3B0FFE2473964100828699 /* LearningYourEnglishWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningYourEnglishWordsUITests.swift; sourceTree = "<group>"; };
 		0F3B10002473964100828699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3B100C24739C4700828699 /* .gitignor */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignor; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		0F3B0FCD2473963C00828699 = {
 			isa = PBXGroup;
 			children = (
+				0F3B100C24739C4700828699 /* .gitignor */,
 				0F3B0FD82473963D00828699 /* LearningYourEnglishWords */,
 				0F3B0FF22473964000828699 /* LearningYourEnglishWordsTests */,
 				0F3B0FFD2473964100828699 /* LearningYourEnglishWordsUITests */,
@@ -237,6 +240,7 @@
 			files = (
 				0F3B0FE92473964000828699 /* LaunchScreen.storyboard in Resources */,
 				0F3B0FE62473964000828699 /* Assets.xcassets in Resources */,
+				0F3B100D24739C4700828699 /* .gitignor in Resources */,
 				0F3B0FE12473963D00828699 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
