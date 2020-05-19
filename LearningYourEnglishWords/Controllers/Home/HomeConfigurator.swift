@@ -19,7 +19,10 @@ class HomeConfigurator {
 extension HomeConfigurator: HomeConfiguratorProtocol {
     func makeViewController() -> HomeViewController {
 
-        let viewController = HomeViewController()
+        let storyboard = R.storyboard.home
+        guard let viewController = storyboard.homeViewController() else {
+            fatalErrorOnCreate(storyboard.homeViewController.identifier)
+        }
         viewController.configurator = self
 
         return viewController
