@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2348712473A48D002E3385 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0F2348702473A48D002E3385 /* .gitignore */; };
 		0F3B0FDA2473963D00828699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FD92473963D00828699 /* AppDelegate.swift */; };
 		0F3B0FDC2473963D00828699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FDB2473963D00828699 /* SceneDelegate.swift */; };
 		0F3B0FDE2473963D00828699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FDD2473963D00828699 /* ViewController.swift */; };
@@ -16,7 +17,10 @@
 		0F3B0FE92473964000828699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B0FE72473964000828699 /* LaunchScreen.storyboard */; };
 		0F3B0FF42473964000828699 /* LearningYourEnglishWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FF32473964000828699 /* LearningYourEnglishWordsTests.swift */; };
 		0F3B0FFF2473964100828699 /* LearningYourEnglishWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B0FFE2473964100828699 /* LearningYourEnglishWordsUITests.swift */; };
-		0F3B100D24739C4700828699 /* .gitignor in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B100C24739C4700828699 /* .gitignor */; };
+		0F3B10132473A10600828699 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B100F2473A10600828699 /* HomePresenter.swift */; };
+		0F3B10142473A10600828699 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10102473A10600828699 /* HomeRouter.swift */; };
+		0F3B10152473A10600828699 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10112473A10600828699 /* HomeViewController.swift */; };
+		0F3B10162473A10600828699 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10122473A10600828699 /* HomeConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F2348702473A48D002E3385 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0F3B0FD62473963D00828699 /* LearningYourEnglishWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningYourEnglishWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3B0FD92473963D00828699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3B0FDB2473963D00828699 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +57,10 @@
 		0F3B0FFA2473964100828699 /* LearningYourEnglishWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningYourEnglishWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3B0FFE2473964100828699 /* LearningYourEnglishWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningYourEnglishWordsUITests.swift; sourceTree = "<group>"; };
 		0F3B10002473964100828699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F3B100C24739C4700828699 /* .gitignor */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignor; sourceTree = "<group>"; };
+		0F3B100F2473A10600828699 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		0F3B10102473A10600828699 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		0F3B10112473A10600828699 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0F3B10122473A10600828699 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +91,7 @@
 		0F3B0FCD2473963C00828699 = {
 			isa = PBXGroup;
 			children = (
-				0F3B100C24739C4700828699 /* .gitignor */,
+				0F2348702473A48D002E3385 /* .gitignore */,
 				0F3B0FD82473963D00828699 /* LearningYourEnglishWords */,
 				0F3B0FF22473964000828699 /* LearningYourEnglishWordsTests */,
 				0F3B0FFD2473964100828699 /* LearningYourEnglishWordsUITests */,
@@ -104,6 +112,7 @@
 		0F3B0FD82473963D00828699 /* LearningYourEnglishWords */ = {
 			isa = PBXGroup;
 			children = (
+				0F3B100E2473A0DD00828699 /* Home */,
 				0F3B0FD92473963D00828699 /* AppDelegate.swift */,
 				0F3B0FDB2473963D00828699 /* SceneDelegate.swift */,
 				0F3B0FDD2473963D00828699 /* ViewController.swift */,
@@ -132,6 +141,17 @@
 				0F3B10002473964100828699 /* Info.plist */,
 			);
 			path = LearningYourEnglishWordsUITests;
+			sourceTree = "<group>";
+		};
+		0F3B100E2473A0DD00828699 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B100F2473A10600828699 /* HomePresenter.swift */,
+				0F3B10102473A10600828699 /* HomeRouter.swift */,
+				0F3B10112473A10600828699 /* HomeViewController.swift */,
+				0F3B10122473A10600828699 /* HomeConfigurator.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2348712473A48D002E3385 /* .gitignore in Resources */,
 				0F3B0FE92473964000828699 /* LaunchScreen.storyboard in Resources */,
 				0F3B0FE62473964000828699 /* Assets.xcassets in Resources */,
-				0F3B100D24739C4700828699 /* .gitignor in Resources */,
 				0F3B0FE12473963D00828699 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3B0FDE2473963D00828699 /* ViewController.swift in Sources */,
+				0F3B10142473A10600828699 /* HomeRouter.swift in Sources */,
 				0F3B0FE42473963D00828699 /* LearningYourEnglishWords.xcdatamodeld in Sources */,
 				0F3B0FDA2473963D00828699 /* AppDelegate.swift in Sources */,
+				0F3B10132473A10600828699 /* HomePresenter.swift in Sources */,
+				0F3B10162473A10600828699 /* HomeConfigurator.swift in Sources */,
+				0F3B10152473A10600828699 /* HomeViewController.swift in Sources */,
 				0F3B0FDC2473963D00828699 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
