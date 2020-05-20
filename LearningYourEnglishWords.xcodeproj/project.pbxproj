@@ -28,6 +28,7 @@
 		0F3B10142473A10600828699 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10102473A10600828699 /* HomeRouter.swift */; };
 		0F3B10152473A10600828699 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10112473A10600828699 /* HomeViewController.swift */; };
 		0F3B10162473A10600828699 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10122473A10600828699 /* HomeConfigurator.swift */; };
+		0F5B94762474120000A5CB9C /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B94752474120000A5CB9C /* HomeCell.swift */; };
 		21891D44C1D9D9E4FC4D92D3 /* Pods_LearningYourEnglishWords_LearningYourEnglishWordsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDA3A4357DEB10F9215016F /* Pods_LearningYourEnglishWords_LearningYourEnglishWordsUITests.framework */; };
 		C678F630DD977D02D98DC2EC /* Pods_LearningYourEnglishWordsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57954CA79166F117B9482CE4 /* Pods_LearningYourEnglishWordsTests.framework */; };
 		DD9154E1779E9CBE70ADE2FE /* Pods_LearningYourEnglishWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8F38EB5EF5CE000CA7E14D /* Pods_LearningYourEnglishWords.framework */; };
@@ -78,6 +79,7 @@
 		0F3B10102473A10600828699 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		0F3B10112473A10600828699 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0F3B10122473A10600828699 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		0F5B94752474120000A5CB9C /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		1FE0FE9D4C59FF8826CDAEE1 /* Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.release.xcconfig"; path = "Target Support Files/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		26102748FBCF087AC12C7D93 /* Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.debug.xcconfig"; path = "Target Support Files/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4135D0A368EE89B7EDE4B85B /* Pods-LearningYourEnglishWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningYourEnglishWords.debug.xcconfig"; path = "Target Support Files/Pods-LearningYourEnglishWords/Pods-LearningYourEnglishWords.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		0F3B100E2473A0DD00828699 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0F5B9474247411C600A5CB9C /* Cells */,
 				0F3B100F2473A10600828699 /* HomePresenter.swift */,
 				0F3B10102473A10600828699 /* HomeRouter.swift */,
 				0F3B10112473A10600828699 /* HomeViewController.swift */,
@@ -230,6 +233,14 @@
 				0F2348822473CB23002E3385 /* Home.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0F5B9474247411C600A5CB9C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0F5B94752474120000A5CB9C /* HomeCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9D1636E1728BE41CDAD0E751 /* Pods */ = {
@@ -523,6 +534,7 @@
 				0F3B10142473A10600828699 /* HomeRouter.swift in Sources */,
 				0F23487B2473BA54002E3385 /* Verb+CoreDataProperties.swift in Sources */,
 				0F23487A2473BA54002E3385 /* Verb+CoreDataClass.swift in Sources */,
+				0F5B94762474120000A5CB9C /* HomeCell.swift in Sources */,
 				0F3B0FE42473963D00828699 /* LearningYourEnglishWords.xcdatamodeld in Sources */,
 				0F2348732473ABDD002E3385 /* CoreDataStack.swift in Sources */,
 				0F3B0FDA2473963D00828699 /* AppDelegate.swift in Sources */,

@@ -10,7 +10,9 @@ import UIKit
 
 protocol HomeRouterProtocol: class {
     var view: HomeViewController? { get set }
-    func openNextScreen()
+    func openStartLearningScreen()
+    func openWordsListScreen()
+    func openLernedListScreenScreen()
 }
 
 class HomeRouter {
@@ -25,7 +27,13 @@ class HomeRouter {
 }
 
 extension HomeRouter: HomeRouterProtocol {
-    func openNextScreen() {
+    func openStartLearningScreen() {
+    }
+    
+    func openWordsListScreen() {
+    }
+    
+    func openLernedListScreenScreen() {
     }
 
 }

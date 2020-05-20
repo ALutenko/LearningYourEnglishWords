@@ -17,6 +17,7 @@ class HomeConfigurator {
 }
 
 extension HomeConfigurator: HomeConfiguratorProtocol {
+    
     func makeViewController() -> HomeViewController {
 
         let storyboard = R.storyboard.home
@@ -34,5 +35,4 @@ extension HomeConfigurator: HomeConfiguratorProtocol {
         let presenter = HomePresenter(router: router, view: viewController)
         viewController.presenter = presenter
     }
-
 }
