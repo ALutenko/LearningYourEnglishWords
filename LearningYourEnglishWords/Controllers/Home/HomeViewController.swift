@@ -30,7 +30,12 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        nvIsHidden()
+        nvIsHidden(hide: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        nvIsHidden(hide: false)
     }
     
     // MARK: - Display logic
@@ -43,8 +48,12 @@ class HomeViewController: UIViewController {
     // MARK: - Overrides
     
     // MARK: - Private functions
-    private func nvIsHidden() {
-        self.navigationController?.isNavigationBarHidden = true
+    private func nvIsHidden(hide: Bool) {
+        if hide {
+            self.navigationController?.isNavigationBarHidden = true
+        } else {
+            self.navigationController?.isNavigationBarHidden = false
+        }
     }
 }
 

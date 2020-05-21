@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--All Words View Controller-->
+        <!--Words-->
         <scene sceneID="Rok-W1-6Fy">
             <objects>
                 <viewController storyboardIdentifier="AllWordsViewController" id="hcz-Rt-ZdE" customClass="AllWordsViewController" customModule="LearningYourEnglishWords" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WordCell" id="ECT-Hq-vPm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AllWordCell" id="ECT-Hq-vPm" customClass="AllWordCell" customModule="LearningYourEnglishWords" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ECT-Hq-vPm" id="iQi-9U-d83">
@@ -40,6 +40,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2o5-rC-FuE"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Words" id="TpQ-qs-7OE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jft-XB-7a4">
+                            <connections>
+                                <action selector="addWordWithSender:" destination="hcz-Rt-ZdE" id="Q9D-A3-yXg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="Wpq-Ks-yhi" id="HZo-ib-vtK"/>

@@ -27,12 +27,14 @@ class AllWordsViewController: UIViewController {
         configurator?.config(viewController: self)
         presenter?.viewDidLoad()
         tableViewConfig()
-        nvIsHidden()
     }
     
     // MARK: - Display logic
     
     // MARK: - Actions
+    @IBAction func addWord(sender: UIBarButtonItem) {
+        presenter?.addWord()
+    }
     
     // MARK: - Overrides
     
@@ -41,10 +43,6 @@ class AllWordsViewController: UIViewController {
         tableView.dataSource = presenter as? UITableViewDataSource
         tableView.delegate = presenter as? UITableViewDelegate
         tableView.tableFooterView = UIView(frame: .zero)
-    }
-    
-    private func nvIsHidden() {
-        self.navigationController?.isNavigationBarHidden = false
     }
 }
 

@@ -11,6 +11,7 @@ import UIKit
 protocol AllWordsPresenterProtocol: class {
     var view: AllWordsViewProtocol? { get set }
     func viewDidLoad()
+    func addWord()
 }
 
 class AllWordsPresenter: NSObject {
@@ -19,6 +20,7 @@ class AllWordsPresenter: NSObject {
 
     // MARK: - Private variables
     private let router: AllWordsRouterProtocol
+    private var listOfWord: Array<Word> = []
     
     // MARK: - Initialization
     init(router: AllWordsRouterProtocol, view: AllWordsViewProtocol) {
@@ -31,6 +33,10 @@ class AllWordsPresenter: NSObject {
 
 extension AllWordsPresenter: AllWordsPresenterProtocol {
     
+    func addWord() {
+        router.openAddWordVC()
+    }
+    
     func viewDidLoad() {
     }
 }
@@ -38,31 +44,21 @@ extension AllWordsPresenter: AllWordsPresenterProtocol {
 extension AllWordsPresenter: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return listOfWord.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell" , for: indexPath) as? HomeCell else {
-//            fatalErrorOnCreate(R.reuseIdentifier.homeCell.identifier)
-//        }
-//        cell.gonfigCell(ListOfButtons[indexPath.row])
-//        return cell
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllWordCell" , for: indexPath) as? AllWordCell else {
+            fatalErrorOnCreate(R.reuseIdentifier.allWordCell.identifier)
+        }
+        cell.gonfigCell(listOfWord[indexPath.row])
+        return cell
     }
 }
 
 extension AllWordsPresenter: UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        switch indexPath.row {
-//        case 0:
-//            router.openStartLearningScreen()
-//        case 1:
-//            router.openWordsListScreen()
-//        case 2:
-//            router.openLernedListScreenScreen()
-//        default:
-//            return
-//        }
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router.openWordVC()
+    }
 }

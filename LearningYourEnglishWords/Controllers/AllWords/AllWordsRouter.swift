@@ -10,7 +10,8 @@ import UIKit
 
 protocol AllWordsRouterProtocol: class {
     var view: AllWordsViewController? { get set }
-    func openNextScreen()
+    func openAddWordVC()
+    func openWordVC()
 }
 
 class AllWordsRouter {
@@ -25,7 +26,12 @@ class AllWordsRouter {
 }
 
 extension AllWordsRouter: AllWordsRouterProtocol {
-    func openNextScreen() {
+    
+    func openAddWordVC() {
+        print("Add Word")
     }
-
+    
+    func openWordVC() {
+        print("Word")
+    }
 }
