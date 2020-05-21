@@ -31,6 +31,8 @@ extension HomeRouter: HomeRouterProtocol {
     }
     
     func openWordsListScreen() {
+        let vc = AllWordsConfigurator().makeViewController()
+        view?.navigationController?.pushViewController(vc, animated: true)
     }
     
     func openLernedListScreenScreen() {

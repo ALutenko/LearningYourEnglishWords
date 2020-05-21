@@ -54,12 +54,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func showUI() {
-        let initialViewController: UIViewController = {
-            let configurator = HomeConfigurator()
-            return configurator.makeViewController()
-        }()
+        let initialViewController = HomeConfigurator().makeViewController()
         
-        let rootController = UINavigationController(rootViewController: initialViewController)
+        let rootController = NavigationController(rootViewController: initialViewController)
         window?.rootViewController = rootController
     }
 

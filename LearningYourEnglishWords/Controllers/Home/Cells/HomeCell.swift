@@ -15,7 +15,5 @@ class HomeCell: UITableViewCell {
     func gonfigCell(_ title: String) {
         
         self.titleLabel.text = title
-        self.titleLabel.layer.cornerRadius = 10
-        self.titleLabel.layer.masksToBounds = true
     }
 }

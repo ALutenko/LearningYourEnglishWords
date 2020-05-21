@@ -29,6 +29,13 @@
 		0F3B10152473A10600828699 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10112473A10600828699 /* HomeViewController.swift */; };
 		0F3B10162473A10600828699 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B10122473A10600828699 /* HomeConfigurator.swift */; };
 		0F5B94762474120000A5CB9C /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B94752474120000A5CB9C /* HomeCell.swift */; };
+		0F5B947C2475A2BA00A5CB9C /* AllWordsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B94782475A2BA00A5CB9C /* AllWordsPresenter.swift */; };
+		0F5B947D2475A2BA00A5CB9C /* AllWordsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B94792475A2BA00A5CB9C /* AllWordsRouter.swift */; };
+		0F5B947E2475A2BA00A5CB9C /* AllWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B947A2475A2BA00A5CB9C /* AllWordsViewController.swift */; };
+		0F5B947F2475A2BA00A5CB9C /* AllWordsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B947B2475A2BA00A5CB9C /* AllWordsConfigurator.swift */; };
+		0F5B94822475A48E00A5CB9C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B94812475A48E00A5CB9C /* MainButton.swift */; };
+		0F5B94842475AE7E00A5CB9C /* AllWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5B94832475AE7E00A5CB9C /* AllWords.storyboard */; };
+		0F5B94862475B0EB00A5CB9C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B94852475B0EB00A5CB9C /* NavigationController.swift */; };
 		21891D44C1D9D9E4FC4D92D3 /* Pods_LearningYourEnglishWords_LearningYourEnglishWordsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDA3A4357DEB10F9215016F /* Pods_LearningYourEnglishWords_LearningYourEnglishWordsUITests.framework */; };
 		C678F630DD977D02D98DC2EC /* Pods_LearningYourEnglishWordsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57954CA79166F117B9482CE4 /* Pods_LearningYourEnglishWordsTests.framework */; };
 		DD9154E1779E9CBE70ADE2FE /* Pods_LearningYourEnglishWords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8F38EB5EF5CE000CA7E14D /* Pods_LearningYourEnglishWords.framework */; };
@@ -80,6 +87,13 @@
 		0F3B10112473A10600828699 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0F3B10122473A10600828699 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		0F5B94752474120000A5CB9C /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		0F5B94782475A2BA00A5CB9C /* AllWordsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsPresenter.swift; sourceTree = "<group>"; };
+		0F5B94792475A2BA00A5CB9C /* AllWordsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsRouter.swift; sourceTree = "<group>"; };
+		0F5B947A2475A2BA00A5CB9C /* AllWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsViewController.swift; sourceTree = "<group>"; };
+		0F5B947B2475A2BA00A5CB9C /* AllWordsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsConfigurator.swift; sourceTree = "<group>"; };
+		0F5B94812475A48E00A5CB9C /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		0F5B94832475AE7E00A5CB9C /* AllWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllWords.storyboard; sourceTree = "<group>"; };
+		0F5B94852475B0EB00A5CB9C /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		1FE0FE9D4C59FF8826CDAEE1 /* Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.release.xcconfig"; path = "Target Support Files/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		26102748FBCF087AC12C7D93 /* Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.debug.xcconfig"; path = "Target Support Files/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests/Pods-LearningYourEnglishWords-LearningYourEnglishWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4135D0A368EE89B7EDE4B85B /* Pods-LearningYourEnglishWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningYourEnglishWords.debug.xcconfig"; path = "Target Support Files/Pods-LearningYourEnglishWords/Pods-LearningYourEnglishWords.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +177,7 @@
 		0F2348892473CED1002E3385 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0F5B94772475A29C00A5CB9C /* AllWords */,
 				0F3B100E2473A0DD00828699 /* Home */,
 			);
 			path = Controllers;
@@ -195,6 +210,7 @@
 		0F3B0FD82473963D00828699 /* LearningYourEnglishWords */ = {
 			isa = PBXGroup;
 			children = (
+				0F5B94802475A46400A5CB9C /* NewComponents */,
 				0F3B0FEA2473964000828699 /* Info.plist */,
 				0F23487F2473BEBB002E3385 /* Resources */,
 				0F2348892473CED1002E3385 /* Controllers */,
@@ -241,6 +257,27 @@
 				0F5B94752474120000A5CB9C /* HomeCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		0F5B94772475A29C00A5CB9C /* AllWords */ = {
+			isa = PBXGroup;
+			children = (
+				0F5B94782475A2BA00A5CB9C /* AllWordsPresenter.swift */,
+				0F5B94792475A2BA00A5CB9C /* AllWordsRouter.swift */,
+				0F5B947A2475A2BA00A5CB9C /* AllWordsViewController.swift */,
+				0F5B947B2475A2BA00A5CB9C /* AllWordsConfigurator.swift */,
+				0F5B94832475AE7E00A5CB9C /* AllWords.storyboard */,
+			);
+			path = AllWords;
+			sourceTree = "<group>";
+		};
+		0F5B94802475A46400A5CB9C /* NewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0F5B94812475A48E00A5CB9C /* MainButton.swift */,
+				0F5B94852475B0EB00A5CB9C /* NavigationController.swift */,
+			);
+			path = NewComponents;
 			sourceTree = "<group>";
 		};
 		9D1636E1728BE41CDAD0E751 /* Pods */ = {
@@ -381,6 +418,7 @@
 			files = (
 				0F2348712473A48D002E3385 /* .gitignore in Resources */,
 				0F2348832473CB23002E3385 /* Home.storyboard in Resources */,
+				0F5B94842475AE7E00A5CB9C /* AllWords.storyboard in Resources */,
 				0F3B0FE92473964000828699 /* LaunchScreen.storyboard in Resources */,
 				0F2348882473CEAB002E3385 /* Default-568h@2x.png in Resources */,
 				0F3B0FE62473964000828699 /* Assets.xcassets in Resources */,
@@ -532,7 +570,9 @@
 			files = (
 				0F2348812473CAF0002E3385 /* R.generated.swift in Sources */,
 				0F3B10142473A10600828699 /* HomeRouter.swift in Sources */,
+				0F5B947C2475A2BA00A5CB9C /* AllWordsPresenter.swift in Sources */,
 				0F23487B2473BA54002E3385 /* Verb+CoreDataProperties.swift in Sources */,
+				0F5B94822475A48E00A5CB9C /* MainButton.swift in Sources */,
 				0F23487A2473BA54002E3385 /* Verb+CoreDataClass.swift in Sources */,
 				0F5B94762474120000A5CB9C /* HomeCell.swift in Sources */,
 				0F3B0FE42473963D00828699 /* LearningYourEnglishWords.xcdatamodeld in Sources */,
@@ -540,10 +580,14 @@
 				0F3B0FDA2473963D00828699 /* AppDelegate.swift in Sources */,
 				0F3B10132473A10600828699 /* HomePresenter.swift in Sources */,
 				0F23487D2473BA54002E3385 /* Word+CoreDataProperties.swift in Sources */,
+				0F5B947D2475A2BA00A5CB9C /* AllWordsRouter.swift in Sources */,
+				0F5B947E2475A2BA00A5CB9C /* AllWordsViewController.swift in Sources */,
 				0F2348862473CD91002E3385 /* ErrorUtility.swift in Sources */,
 				0F3B10162473A10600828699 /* HomeConfigurator.swift in Sources */,
 				0F3B10152473A10600828699 /* HomeViewController.swift in Sources */,
+				0F5B947F2475A2BA00A5CB9C /* AllWordsConfigurator.swift in Sources */,
 				0F3B0FDC2473963D00828699 /* SceneDelegate.swift in Sources */,
+				0F5B94862475B0EB00A5CB9C /* NavigationController.swift in Sources */,
 				0F23487C2473BA54002E3385 /* Word+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

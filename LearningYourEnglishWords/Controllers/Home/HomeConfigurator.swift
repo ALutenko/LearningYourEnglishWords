@@ -14,13 +14,13 @@ protocol HomeConfiguratorProtocol: class {
 }
 
 class HomeConfigurator {
+    let storyboard = R.storyboard.home
 }
 
 extension HomeConfigurator: HomeConfiguratorProtocol {
     
     func makeViewController() -> HomeViewController {
 
-        let storyboard = R.storyboard.home
         guard let viewController = storyboard.homeViewController() else {
             fatalErrorOnCreate(storyboard.homeViewController.identifier)
         }

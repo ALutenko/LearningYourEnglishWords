@@ -89,12 +89,21 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
+    /// Storyboard `AllWords`.
+    static let allWords = _R.storyboard.allWords()
     /// Storyboard `Home`.
     static let home = _R.storyboard.home()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "AllWords", bundle: ...)`
+    static func allWords(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.allWords)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "Home", bundle: ...)`
@@ -184,8 +193,8 @@ struct R: Rswift.Validatable {
 
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `HomeCell`.
-    static let homeCell: Rswift.ReuseIdentifier<HomeCell> = Rswift.ReuseIdentifier(identifier: "HomeCell")
+    /// Reuse identifier `WordCell`.
+    static let wordCell: Rswift.ReuseIdentifier<UIKit.UITableViewCell> = Rswift.ReuseIdentifier(identifier: "WordCell")
 
     fileprivate init() {}
   }
@@ -214,6 +223,9 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
+      try allWords.validate()
+      #endif
+      #if os(iOS) || os(tvOS)
       try home.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -222,21 +234,47 @@ struct _R: Rswift.Validatable {
     }
 
     #if os(iOS) || os(tvOS)
+    struct allWords: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let allWordsViewController = StoryboardViewControllerResource<AllWordsViewController>(identifier: "AllWordsViewController")
+      let bundle = R.hostingBundle
+      let name = "AllWords"
+
+      func allWordsViewController(_: Void = ()) -> AllWordsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: allWordsViewController)
+      }
+
+      static func validate() throws {
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.allWords().allWordsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'allWordsViewController' could not be loaded from storyboard 'AllWords' as 'AllWordsViewController'.") }
+      }
+
+      fileprivate init() {}
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     struct home: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIKit.UINavigationController
+      typealias InitialController = NavigationController
 
       let bundle = R.hostingBundle
       let homeViewController = StoryboardViewControllerResource<HomeViewController>(identifier: "HomeViewController")
       let name = "Home"
+      let navigationController = StoryboardViewControllerResource<NavigationController>(identifier: "NavigationController")
 
       func homeViewController(_: Void = ()) -> HomeViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: homeViewController)
+      }
+
+      func navigationController(_: Void = ()) -> NavigationController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: navigationController)
       }
 
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.home().homeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewController' could not be loaded from storyboard 'Home' as 'HomeViewController'.") }
+        if _R.storyboard.home().navigationController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'navigationController' could not be loaded from storyboard 'Home' as 'NavigationController'.") }
       }
 
       fileprivate init() {}
